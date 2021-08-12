@@ -1,0 +1,196 @@
+//commons
+
+.container.dishes {
+    margin-top: 30px;
+    h2,span {
+       //color: $primary;
+       font-weight: bold ;
+       display: block;
+    }
+
+    a:last-of-type{
+        display: block;
+        margin-top: 30px;
+    }
+    
+    form {
+        display: inline-block;
+    }
+}
+
+.container.dishes h2,h5 {
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    
+}  
+
+.container.dishes h2 {
+    margin-bottom: 30px;
+}
+
+.container.dishes h5:not(:last-of-type) {
+    color: $main-text;
+}
+
+.dishes .visibility {
+    text-decoration: underline;
+    color: $secondary;
+    margin: 30px 0;
+}
+
+.dishes i {
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+}
+
+//classe Bootstrap modificata
+.dishes .btn {
+    font-weight: bold;
+    background-color: $secondary;
+    color: $falsewhite;
+    &:hover {
+        background-color: #d86001;
+        color: $falsewhite;
+    }
+}
+
+//DISHES.INDEX
+
+.container.dishes.index {
+    display: flex;
+    flex-wrap: wrap;
+    &>a {
+        width: 100%;
+    }
+}
+
+.dishes.index > .dish-card {
+    display: flex;
+    flex-direction: column;
+    //border: 1px solid $primary;
+    padding: 15px;
+    border-radius: 4px;
+    width: 30%;
+    margin: 20px 10px;
+    background-color: $falsewhite;
+    &>a {
+        display: inline-block;
+        margin: 5px 0;
+    }
+    &>h2 {
+        font-family: 'Lilita One', cursive;
+    }
+    .filler {
+        display: flex;
+        flex-grow: 1;
+    }
+    .btn.edit {
+        display: inline-block;
+        margin-top: unset;
+    }
+}
+
+//DISHES.SHOW
+.dishes.show {
+    i {
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-family: 'Lilita One', cursive; 
+    }
+    .btn.edit {
+        display: inline-block;
+        margin-top: unset;
+    }
+}
+
+
+//DISHES.CREATE
+
+.dishes.create,
+.dishes.edit {
+    padding-top: 30px;
+    &>div, &>a {
+        margin: 30px;
+        max-width: 45%;
+        textarea {
+            margin: 10px 0;
+            border-color: $primary;
+            // &::placeholder {
+            //     color: $primary
+            // }
+        }
+        label {
+            //color: $primary;
+            &:first-of-type {
+                font-weight:bold;
+                color: $tertiary;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dishes.index > .dish-card {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .container.dishes.index {
+        display: block;
+        flex-wrap: none
+    }
+
+    .dishes.create,
+    .dishes.edit {
+        &>div {
+            max-width: 100%;
+        }
+    }     
+}
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .dishes.index > .dish-card {
+        width: 45%;
+    }
+
+    .dishes.create,
+    .dishes.edit {
+        &>div {
+            max-width: 75%;     
+        }
+    }        
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .dishes.index > .dish-card {
+        //  &>a, &>form {
+        //     margin:5px auto
+        // }
+        // &>form {
+        //     display: flex;
+        //     input {
+        //         width: 100%;
+        //     }
+        // }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            &>a,form {
+                margin-top:5px;
+
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            .btn.edit {
+                margin-top: 5px;
+    }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+//fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import 'our-commons';
+@import 'nav-bar';
+@import 'cart';
+@import 'home';
+
+// stili ordini andrea
+@import 'partials/orders.scss';
+@import 'partials/payment.scss';
+@import 'partials/welcome.scss';
+@import 'dishes';
+@import 'partials/register';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+@import url('https:///fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;800&display=swap');
+
+//font-family: 'Poppins', sans-serif;
+/*Extra-light 200
+Light 300
+Regular 400
+Extra-bold 800*/
+
+
+//grassetto con 'grazie'
+@import url('https:///fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+//font-family: 'Lilita One', cursive;
+
+//font logo
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+//font-family: 'Righteous', cursive;
+
+
+//"ma deve stare proprio qui?" SI
+a:hover{
+    color: $primary;
+    text-decoration: none;
+    transition: 0.2s;
+}

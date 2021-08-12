@@ -1,0 +1,58 @@
+.orders-part {
+    .my-container-flex {
+        display: flex;
+        &.flex-between {
+            justify-content: space-between;
+        }
+    }
+    .my-link-container {
+        padding-bottom: 1.5rem;
+    }
+    .fas {
+        width: 5%;
+        height: 100%;
+        font-size: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $secondary;
+        &:hover {
+            color: $primary;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+    }
+    th {
+        color: $secondary;
+    }
+    h1 {
+        font-family: 'Lilita One', cursive;
+        color: $main-text;
+    }
+}
+.chart-container {
+    position: relative;
+    max-width: 992px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.center {
+    text-align: center;
+}
+
+.orders.create {
+    .box-submit button:hover {
+        background-color: $primary;
+        transition: 0.2s;
+    }
+}
+
+.my-overlay {
+    &:hover {
+        background-color: #ec812a;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (min-width: 992px) {
+}
+

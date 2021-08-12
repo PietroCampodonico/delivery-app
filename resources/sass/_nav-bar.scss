@@ -1,0 +1,110 @@
+.my-nav {
+    width: 100%;
+    z-index: 3;
+    background-color: $falsewhite;
+    // & a:not(a.my-brand){
+    //     color: $secondary;
+    //     font-weight: 600;
+    //     }
+}
+
+.my-brand {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: $primary;
+}
+
+.my-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+}
+
+
+.my-toggler {
+    color: $secondary;
+    font-size: 30px;
+    background-color: transparent;
+    border: 0;
+        &:hover{
+        background-color: transparent;
+        }
+        &:focus{
+            color: $primary;
+            background-color: transparent;
+            }
+}
+
+.my-nav-link{
+    width: 130px;
+    margin: 20px 20px 20px 5px;
+    border-radius: 10px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.my-nav-item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-bottom: 1px solid $secondary;
+}
+
+
+    
+
+//-----------------------------------------------------
+@media screen and (min-width: 764px) {
+    .my-toggler {
+        display: none;
+    }
+
+    .my-container{
+        margin:0 30px 0 30px;
+    }
+    .my-nav {
+        background-color: $secondary;
+        height: 100px;
+        border-bottom-right-radius: 150px 150px;
+            // & a:not(a.my-brand){
+            //     color: $secondary;
+            //     font-weight: bold;
+            // }
+    }
+
+    .my-brand {
+        font-size: 33px;
+        color: $falsewhite;
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    .my-nav-link{
+        margin: 20px 20px 20px 5px;
+        padding: 10px 15px 10px 15px;
+        background-color: $falsewhite;
+        color: $secondary;
+        font-weight: bold;
+        &:hover {
+            color: white;
+        }
+    }
+  
+    .my-nav-item {
+        border-bottom: 0px;
+        a:hover {
+            background-color: $primary;
+        }
+    }
+   
+    #navbarDropdown.my-name {
+      color: white;
+    }
+
+ 
+    
+}

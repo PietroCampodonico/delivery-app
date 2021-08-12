@@ -1,0 +1,98 @@
+.register,
+.login {
+    margin-top: 30px;
+
+    .btn {
+        font-weight: bold;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .types-label {
+        margin:0 0 15px 60px ;
+    }
+}
+
+.register .btn,
+.login .btn {
+    background-color: $secondary;
+    color: $falsewhite;
+    &:hover {
+        background-color: #d86001;
+        color: $falsewhite;
+    }
+}
+
+.login .btn {
+    margin-top: 10px;
+    margin-right:10px;
+    
+} 
+
+.btn.btn-link.forget:hover {
+        text-decoration: none;
+    }
+
+
+.register .card-header,
+.login .card-header {
+    background-color: $primary;
+    font-weight: bold;
+    color: white;
+}
+
+.register .card-body,
+.login .card-body {
+    label:not([for="remember"]) {
+        font-weight: bold;
+    }
+}
+
+.types {
+    padding-left: 75px;
+    margin: auto;
+    .type{
+        margin-bottom: 10px;
+        &:hover {
+            cursor: pointer;
+        }
+    }       
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .register .types-label {
+        margin:0 0 15px 20px ;
+    }
+
+    .types {
+        padding-left: 35px;
+    }
+
+    .type{
+        margin-bottom: 10px;
+        &::after {
+        content: ";";
+        color: $main-text;
+        }
+    }       
+}
+
+@media screen and (max-width: 767px) {
+    .register .types-label {
+        margin:0 0 15px 0 ;
+    }
+
+    .types {
+        padding-left: 15px;
+    }
+
+    .type{
+        margin-bottom: 10px;
+        &::after {
+        content: ";";
+        color: $main-text;
+        }
+    }       
+}

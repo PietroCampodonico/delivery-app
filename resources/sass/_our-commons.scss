@@ -1,0 +1,101 @@
+/*----------------------------------------------modificabili a parere popolare*/
+
+.enlight{color: $secondary}
+
+.for-the-nav{
+    margin:0;
+    padding:0;
+    padding-top: 130px
+}
+   @media (min-width: 200px) and (max-width: 992px) {
+    .for-the-nav{
+        padding-top: 150px;
+    }
+
+   }
+
+.errorDiv{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px 0 30px 0;
+    border: 2px solid $secondary;
+    background-color: white;
+    color: $secondary;
+    text-align: center;
+    border-radius: 5px;
+    & .fas{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+}
+
+a:hover{
+    color: $tertiary;
+    text-decoration: none;
+}
+button:hover {
+    background-color: $primary;
+}
+
+
+h1, p, h3, h6{ color: $main-text}
+h1{font-family: 'Lilita One';}
+*{font-family: 'Poppins', sans-serif;}
+
+
+/*bottone indietro,
+icona usata da me -> <i class="fas fa-backspace"> */
+
+.back-bttn {
+    color: $secondary;
+    
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: none ;
+}
+
+/*bottone base*/
+.my-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-weight: bolder;
+
+    border-radius: 5px;
+    margin: 5px;
+    border:0;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: $falsewhite;
+    background-color: $secondary;
+    z-index: 3;
+ }
+
+ /*ombre bottoni (vedi nell'order create)*/
+ .my-bttns {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.39);
+}
+
+.row{
+    display: flex;
+}
+
+.card-body{
+    form{
+        .my-bttns{
+            &:hover{
+                color:white;
+                background-color: $secondary;
+            }
+        }
+    }
+}
+
+
+
